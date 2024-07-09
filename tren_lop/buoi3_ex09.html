@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ## request - response
+    1. http request
+    -url
+    -method : get ( k có body), post, put, patch, delte
+    -header
+    -body / payload
+    2. http response
+    -status
+    -header
+    -body
+    lưu ý : -http là giao thức web giup giao tiếp giữa clien với sever
+            -http là giao thức k liên tục -->
+    <!-- <form
+      method="post"
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+    > method post để đẩy dữ liệu lên
+      get là lấy về
+      <input type="text" name="fullname" id="" />
+      <button>submit</button>
+    </form> -->
+    <form action="">
+      <div>
+        <label for="">Họ và tên</label>
+        <input
+          type="text"
+          name=""
+          id=""
+          required
+          value=""
+          placeholder="Họ Tên..."
+        />
+      </div>
+    </form>
+    <form action="">
+      <div>
+        <label for="">email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          value=""
+          placeholder="email"
+        />
+      </div>
+    </form>
+    <form action="">
+      <div>
+        <label for="password">mật khẩu</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          value=""
+          placeholder="password"
+        />
+      </div>
+    </form>
+    <form action="">
+      <div>
+        <label for="age">tuổi</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          required
+          value=""
+          placeholder="tuổi..."
+          min="18"
+          max="50"
+          step="0.1"
+        />
+      </div>
+    </form>
+    <form action="">
+      <div>
+        <label for="avatar">avatar</label>
+        <input type="file" name="avatar" id="avatar" multiple />
+      </div>
+    </form>
+    <form action="">
+      <div>
+        <label for="seach">seach</label>
+        <input type="search" name="seach" id="seach" placeholder="tìm kiếm" />
+      </div>
+    </form>
+    <form action="">
+      <div>
+        <label for="date">date</label>
+        <input type="datetime-local" name="date" id="date" />
+      </div>
+    </form>
+    <div>
+      <label for="">giới tính</label>
+      <input type="radio" name="gender" value="" id="" />
+      <label for=""
+        >nam
+        <input type="radio" name="gender" value="male" />
+      </label>
+      <label for="">Nữ</label>
+      <input type="radio" name="gender" value="femaly" />
+      <button>submit</button>
+    </div>
+    <label for="">Sở thích</label>
+    <label for="">
+      <input type="checkbox" value="music" name="hobby" />nghe nhạc
+    </label>
+    <label for="">
+      <input type="checkbox" value="web" name="hobby" checked />lướt web
+    </label>
+    <label>
+      <input type="checkbox" value="walking" name="hobby" />chạy bộ
+    </label>
+    <form action="">
+      <div>
+        <label for="message">message</label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="tin nhắn..."
+          cols="30"
+          rows="10"
+        >
+      ok
+    </textarea
+        >
+      </div>
+    </form>
+    <form action="">
+      <div>
+        <label for="province">Tỉnh/Thành Phố</label>
+        <select name="province" id="province">
+          <option value="1">Hà Nội</option>
+          <option value="2">Hưng Yên</option>
+          <option value="3" selected>Lạng Sơn</option>
+        </select>
+        <div>
+          <button type="submit">aaaa</button>
+          <button type="button">bbbbb</button>
+          <button type="reset">ccccc</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
