@@ -2,20 +2,20 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 10px;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 16px;
 }
-* {
+*{
     box-sizing: border-box;
   }
 .all{
 background-color: #ccc;
-margin: 20px auto;
 }
 .sign-wrapp>div{
     padding: 0 10px;
     flex-basis: 50%;
     max-width: 50%;
-    padding: 0 10px;
 }
 label{
     font-weight: bolder;
@@ -39,13 +39,13 @@ label>span{
     font-size: small;
     opacity: 0.4;
 }
-button {
+button{
     color: #fff;
     border-radius: 5px;
     background-color: #3fab46;
-    margin: 20px auto;
     width: 100%;
     padding: 16px;
+    margin-top: 30px;
 }
 .sign_all{
     background-color: #ccc;
