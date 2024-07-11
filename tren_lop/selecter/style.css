@@ -21,7 +21,7 @@ h3 {
 .menu .item {
     color: violet;
 } */
-div.content h2 {
+/* div.content h2 {
     color: red;
 }
 section.content#box h2{
@@ -42,7 +42,33 @@ p ~ h2{
     color: yellow ;
 } */
 /* chọn thẻ h2 nằm sau thẻ h2 thứ 2 */
-p + h2,
+/* p + h2,
 p + h2 + h2 {
     color: red;
+}  */
+
+/* atrribute selector */
+/* 1. [tenthuoctinh] => chonnj tất cả thẻ html có thuộc tính
+    2. [tenthuoctinh="giatri]==> chọn tất cả thẻ html có thuộc tính =giá trị
+    3. [tenthuoctinh^="giatri ==>  chọn tất cả thẻ html có giá trị thuộc tính bắt dầu bằng giá trị
+    4.[tenthuoctinh$=giatri"] ==> chọn tất cả thẻ html có giá trị thuộc tính kết thúc bằng giatri
+    5 [tenthuoctinh*="giatri"] ==< chọn tất cả thẻ html có thuộc tính chứa giá trị
+    6. [tenthuoctinh~="giatri] ==> chọn tất cả thẻ html có thuộc tính chứa giatri là 1 từ
+    * ==> đại diện cho tất cả thẻ html
+    */
+/* ul li a[href] {
+  color: red;
+} */
+/* [class^="title-"] {
+  color: green;
+} */
+/* * {
+  color: red;
+} */
+/* $ - số thứ tự tăng dần
+ # id 
+ . class
+ > cấp tiếp theo */
+.content > * {
+  border: 1px solid rgb(188, 3, 3);
 }

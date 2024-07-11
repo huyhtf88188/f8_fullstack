@@ -1,0 +1,73 @@
+/* 
+lớp giả (trạng thái)
+cú pháp : 
+selector:tenlopgia{
+code css}
+-hover - chi có tác dụng với form
+-active
+-focus - chỉ định thứ tự tab
+-checked
+-disabled - chỉ áp dụng với form
+-not
+-first-chill
+-last-chill
+-firt-of-type
+-last-of-type
+-nth-chill
+-nth-of-type
+-valid - phair cos required
+ */
+h1:hover {
+  color: green;
+}
+
+h1:active {
+  color: red;
+}
+
+/* input:focus {
+  background: rgb(194, 186, 186);
+}
+button:focus {
+  background: red;
+} */
+/* input:focus::placeholder {
+  color: green;
+}
+input:disabled::placeholder {
+  color: blueviolet;
+} */
+/* .list_item li:not(.item):not(.firt) {
+  color: red;
+} */
+/* .list_item li:first-of-type {
+  color: goldenrod;
+}
+.list_item li:last-child {
+  color: green;
+}
+.content h2:nth-child(2n + 1) {
+  color: red;
+}
+.name:valid {
+  background: red;
+} */
+
+/* input[id="red"]:checked ~ p {
+  color: red;
+}
+input[id="red"]:checked ~ .red {
+  color: red;
+}
+input[id="green"]:checked ~ p {
+  color: green;
+}
+input[id="green"]:checked ~ .green {
+  color: green;
+}
+input[id="blue"]:checked ~ .blue {
+  color: blue;
+}
+input[id="blue"]:checked ~ p {
+  color: blue;
+} */

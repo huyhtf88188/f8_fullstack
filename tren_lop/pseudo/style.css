@@ -1,0 +1,38 @@
+/* cú pháp phần tử giả
+selector::tenphantu{
+    code csss
+}
+-before ***
+-after ***
+-first-line
+-selection ***
+-placeholder ***
+*/
+h1::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+}
+h1::after {
+  content: ">";
+}
+p::first-line {
+  color: violet;
+}
+p::first-letter {
+  color: black;
+}
+p::selection {
+  background-color: black;
+  color: rgb(16, 115, 203);
+}
+input::placeholder {
+  color: red;
+  font-style: italic;
+}
+body {
+  height: 2000px;
+}
