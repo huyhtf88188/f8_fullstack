@@ -38,3 +38,6 @@ div[class="subscribe_all"]:hover .send_me {
 div[class="subscribe_all"]:hover #send {
   color: white;
 }
+div[class="subscribe_all"]:hover #email {
+  background-color: #ddd;
+}
