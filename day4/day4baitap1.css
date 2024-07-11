@@ -35,6 +35,6 @@ div[class="subscribe_all"]:hover #email::placeholder {
 div[class="subscribe_all"]:hover .send_me {
   color: rgb(231, 148, 22);
 }
-div[class="subscribe_all"]:hover span {
+div[class="subscribe_all"]:hover #send {
   color: white;
 }
