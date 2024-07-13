@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+.all_quote {
+  display: flex;
+  background-color: whitesmoke;
+  border: 1px solid #ccc;
+  width: 500px;
+  border-radius: 8px;
+  padding: 10px;
+  height: 180px;
+}
+blockquote {
+  font-style: italic;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.quote_right {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  background: #ccc;
+  border-radius: 50%;
+  padding: 16px;
+  align-self: flex-end;
+  margin: 0px;
+}
+.quote_left {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  background: #ccc;
+  border-radius: 50%;
+  padding: 16px;
+  margin: 0px;
+}
