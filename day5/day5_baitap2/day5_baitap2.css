@@ -1,0 +1,75 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 2.5rem;
+  margin: auto;
+}
+.question-box {
+  width: 80%;
+  border: 1px solid rgba(18, 17, 17, 0.214);
+  display: block;
+  position: absolute;
+  color: white;
+  border-radius: 5px;
+  padding: 1rem;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+.open {
+  display: inline-block;
+}
+
+.close {
+  display: none;
+}
+
+input:checked ~ .open {
+  display: none;
+}
+
+input:checked ~ .close {
+  display: inline-block;
+}
+
+input:checked ~ .content + p {
+  display: block;
+}
+
+.content + p {
+  display: none;
+}
+.open,
+.close {
+  font-size: 2rem;
+}
+.firt-question,
+.second-question,
+.thir-question {
+  width: 100%;
+  color: white;
+  background-color: #d95825;
+  border: 1px solid rgb(17, 17, 17);
+  margin: 0rem 0rem 0.5rem 0rem;
+}
+p {
+  color: black;
+  background-color: white;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 1rem;
+}
+.open,
+.close {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+}
+.content {
+  padding: 0rem 0.5rem 0.5rem 0.5rem;
+  font-size: 1.2rem;
+  display: inline-block;
+}
