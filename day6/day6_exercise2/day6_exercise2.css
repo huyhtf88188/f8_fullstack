@@ -1,0 +1,80 @@
+html {
+  font-size: 62.5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.menu-wrap {
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1rem 4rem 1rem 4rem;
+  background: #ebf5fe;
+  margin: 3rem 35rem 3rem 35rem;
+}
+.top-item,
+.bot-item {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  height: 62.5%;
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+i {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.047);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  align-items: center;
+  align-content: center;
+  color: white;
+}
+.unique,
+.theme,
+.digital,
+.website,
+.responsive,
+.quick {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  padding: 0rem 1rem 1rem 1rem;
+  background: white;
+  box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.107);
+}
+p {
+  color: #666666;
+}
+a {
+  color: blue;
+}
+.unique i {
+  background-image: linear-gradient(to right, #e45c79, #e4686c, #e3725f);
+}
+.theme i {
+  background-image: linear-gradient(to right, #4ea4a4, #62bca2, #78d5a0);
+}
+.digital i {
+  background-image: linear-gradient(to right, #e28832, #eba43e, #f3bc48);
+}
+.website i {
+  background-image: linear-gradient(to right, #356dd0, #527fe2, #6d8ff3);
+}
+.responsive i {
+  background-image: linear-gradient(to right, #7123cb, #9741db, #b85ae9);
+}
+.quick i {
+  background-image: linear-gradient(to right, #6a8a2d, #7ca43f, #8fc052);
+}
+.unique:hover,
+.theme:hover,
+.digital:hover,
+.website:hover,
+.responsive:hover,
+.quick:hover {
+  border: 1px solid red;
+}
