@@ -1,0 +1,175 @@
+* {
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+  font-family: Lato;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../../fonts/Lato-Light.ttf");
+}
+h1 {
+  font-family: "Lobster";
+  font-size: 5rem;
+  padding: 0rem 5rem 1rem 5rem;
+  font-weight: lighter;
+}
+p {
+  font-size: 1.5rem;
+  align-items: center;
+  text-align: start;
+  padding: 0rem 5rem 1rem 5rem;
+  opacity: 0.5;
+}
+p span {
+  color: red;
+}
+.container {
+  border: 1px solid black;
+  width: 60%;
+  border-radius: 5px;
+}
+.name,
+.email,
+.phone,
+.subject,
+.message {
+  width: 100%;
+  margin-left: 5rem;
+  position: relative;
+}
+.container-submit input {
+  width: 80%;
+  padding: 1rem 2rem;
+  margin-left: 4rem;
+  border: 1.5px solid gray;
+  margin-bottom: 2rem;
+}
+.user,
+.phone-icon,
+.subject-icon {
+  background-color: gray;
+  font-size: 2rem;
+  padding: 0.88rem 1.75rem;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: -0.5em;
+}
+select {
+  width: 84.5%;
+  height: 3.82rem;
+  margin-left: 4.1rem;
+  margin-bottom: 2rem;
+}
+textarea {
+  margin-left: 4.2rem;
+  resize: none;
+  opacity: 0.5;
+}
+.email-icon {
+  background-color: gray;
+  font-size: 2rem;
+  padding: 0.88rem 1.6rem;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: -0.5em;
+}
+.message-icon {
+  height: 15.6rem;
+  background-color: gray;
+  font-size: 2rem;
+  padding: 0.88rem 1.6rem;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: -0.5em;
+}
+.close {
+  position: absolute;
+  right: 11rem;
+  top: 1.5rem;
+  opacity: 0.6;
+  font-size: 1rem;
+  display: none;
+}
+.star {
+  position: absolute;
+  right: 11rem;
+  top: 1.5rem;
+  opacity: 0.6;
+  font-size: 0.7rem;
+}
+.message .star {
+  top: 1.5rem;
+  right: 11rem;
+}
+.name input:focus + .comment,
+.email input:focus + .comment,
+.phone input:focus + .comment,
+.subject select:focus + .comment,
+.message textarea:focus + .comment {
+  display: block;
+}
+.comment {
+  display: none;
+  position: absolute;
+  top: -5rem;
+  left: 4rem;
+  background: black;
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.name input:hover,
+.email input:hover,
+.phone input:hover,
+.subject select:hover,
+.message textarea:hover {
+  border: 2px solid black;
+}
+.name input:focus ~ .star,
+.email input:focus ~ .star,
+.phone input:focus ~ .star,
+.subject select:focus ~ .star,
+.message textarea:focus ~ .star {
+  display: none;
+}
+.name input:focus ~ .close,
+.email input:focus ~ .close,
+.phone input:focus ~ .close,
+.subject select:focus ~ .close,
+.message textarea:focus ~ .close {
+  display: flex;
+}
+.name input:hover ~ .user,
+.email input:hover ~ .email-icon,
+.phone input:hover ~ .phone-icon,
+.subject select:hover ~ .subject-icon,
+.message textarea:hover ~ .message-icon {
+  background-color: black;
+  border: 1px solid black;
+}
+.btn {
+  display: flex;
+  padding: 3rem 4rem 3rem 4rem;
+  height: 3rem;
+}
+button {
+  padding: 1rem 3rem 1rem 3rem;
+  background-color: #ea3f33;
+  color: white;
+  border: 1px solid #ea3f33;
+  position: relative;
+  left: 46rem;
+}
+.btn input {
+  margin: 0;
+  width: 3rem;
+}
+.btn span {
+  font-size: 1.8rem;
+  padding: 0rem 1rem 1rem 1rem;
+}
