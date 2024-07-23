@@ -26,21 +26,21 @@
         </p>
         <div class="container-submit">
           <div class="name">
-            <input type="name" name="name" id="" placeholder="Your name" />
+            <input type="text" name="name" id="" placeholder="Your name" />
             <span class="comment">Enter your name</span>
             <i class="fa-solid fa-user user"></i>
             <i class="fa-solid fa-star star"></i>
             <i class="fa-solid fa-x close"></i>
           </div>
           <div class="email">
-            <input type="name" placeholder="Your@domain.com" />
+            <input type="email" placeholder="Your@domain.com" />
             <span class="comment">Enter your email</span>
             <i class="fa-solid fa-envelope email-icon"></i>
             <i class="fa-solid fa-star star"></i>
             <i class="fa-solid fa-x close"></i>
           </div>
           <div class="phone">
-            <input type="name" placeholder="+44 00 123" />
+            <input type="number" placeholder="+44 00 123" />
             <span class="comment">Enter your phone number</span>
             <i class="fa-solid fa-mobile-screen-button phone-icon"></i>
           </div>
@@ -50,19 +50,31 @@
               <option value="option-2">option-2</option>
               <option value="option-3">option-3</option>
             </select>
+            <i class="fa-solid fa-sort sort"></i>
             <span class="comment">Enter your subject</span>
             <i class="fa-solid fa-book subject-icon"></i>
           </div>
           <div class="message">
-            <textarea name="message" rows="11" cols="102">Message</textarea>
+            <textarea
+              name="message"
+              rows="11"
+              cols="102"
+              placeholder="Message"
+            ></textarea>
             <span class="comment">Enter your massage</span>
             <i class="fa-solid fa-message message-icon"></i>
             <i class="fa-solid fa-star star"></i>
             <i class="fa-solid fa-x close"></i>
           </div>
           <div class="btn">
-            <input type="checkbox" name="text" id="copy" checked />
-            <span>Send me a copy this message</span>
+            <!-- <input type="checkbox" name="text" id="copy" checked />
+            <label for="" id="copy">Send me a copy this message</label>
+            <button type="submit">Send</button> -->
+            <label class="container-checkbox">
+              Send me a copy this message
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
             <button type="submit">Send</button>
           </div>
         </div>

@@ -45,6 +45,7 @@ p span {
   margin-left: 4rem;
   border: 1.5px solid gray;
   margin-bottom: 2rem;
+  font-family: Lato;
 }
 .user,
 .phone-icon,
@@ -60,8 +61,9 @@ p span {
 select {
   width: 84.5%;
   height: 3.82rem;
-  margin-left: 4.1rem;
+  margin-left: 4.3rem;
   margin-bottom: 2rem;
+  appearance: none;
 }
 textarea {
   margin-left: 4.2rem;
@@ -94,6 +96,13 @@ textarea {
   opacity: 0.6;
   font-size: 1rem;
   display: none;
+}
+.sort {
+  position: absolute;
+  right: 11rem;
+  top: 1.5rem;
+  opacity: 0.6;
+  font-size: 1rem;
 }
 .star {
   position: absolute;
@@ -136,7 +145,7 @@ textarea {
 .phone input:hover,
 .subject select:hover,
 .message textarea:hover {
-  border: 2px solid black;
+  outline: 1px solid black;
 }
 .name input:focus ~ .star,
 .email input:focus ~ .star,
@@ -158,8 +167,24 @@ textarea {
 .subject select:hover ~ .subject-icon,
 .message textarea:hover ~ .message-icon {
   background-color: black;
-  border: 1px solid black;
+  outline: 1px solid black;
 }
+.name input:focus ~ .user,
+.email input:focus ~ .email-icon,
+.phone input:focus ~ .phone-icon,
+.subject select:focus ~ .subject-icon,
+.message textarea:focus ~ .message-icon {
+  background-color: black;
+  outline: 1px solid black;
+}
+.name input:focus,
+.email input:focus,
+.phone input:focus,
+.subject select:focus,
+.message textarea:focus {
+  outline: 1px solid black;
+}
+
 .btn {
   display: flex;
   padding: 3rem 4rem 3rem 4rem;
@@ -171,7 +196,8 @@ button {
   color: white;
   border: 1px solid #ea3f33;
   position: relative;
-  left: 46rem;
+  left: 41.5rem;
+  font-family: Lato;
 }
 .btn input {
   margin: 0;
@@ -180,4 +206,72 @@ button {
 .btn span {
   font-size: 1.8rem;
   padding: 0rem 1rem 1rem 1rem;
+}
+.container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 12px;
+  background-color: #eee;
+  color: black;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+  background-color: white;
+  border: 1px solid gray;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+  left: 12px;
+  top: 6px;
+  width: 6px;
+  height: 8px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
