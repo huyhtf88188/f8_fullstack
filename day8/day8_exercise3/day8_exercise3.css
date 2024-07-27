@@ -110,3 +110,6 @@ hr {
   font-size: 1.5rem;
   font-weight: bolder;
 }
+.card:hover {
+  transform: translateY(-10px);
+}

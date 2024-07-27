@@ -8,14 +8,13 @@
 
 body {
   font-family: "ASAP";
-  background-color: gray;
 }
 
 header {
   width: 80%;
-  height: 300px;
+  height: 350px;
   margin: 10rem auto;
-  background-image: url("../../image/2.PNG");
+  background-image: url("../../image/81_landmark.PNG");
   background-size: 100%;
   background-repeat: no-repeat;
   align-items: center;
@@ -27,8 +26,8 @@ header {
 .content-header {
   color: white;
   position: absolute;
-  left: 30rem;
-  top: 16rem;
+  left: 35rem;
+  top: 22rem;
 }
 .logo {
   width: 100px;
@@ -36,22 +35,27 @@ header {
   margin-right: 20px;
   position: absolute;
   left: -25rem;
-  top: -1.3rem;
+  top: -2.8rem;
 }
 
 img {
   width: 22rem;
   height: 12rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 h1 {
   font-size: 2rem;
   margin-bottom: 10px;
+  font-family: "ASAP";
+  font-weight: 500;
 }
 
 .introduce {
   display: flex;
   gap: 2rem;
+  font-weight: 500;
 }
 
 p {
@@ -61,7 +65,7 @@ p {
 }
 
 span {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.8rem;
 }
 
@@ -96,6 +100,7 @@ span {
   color: #333;
   font-size: 1.2rem;
   padding: 10px 20px;
+  font-size: 1.5rem;
 }
 
 .menu-bar ul li a:hover {
