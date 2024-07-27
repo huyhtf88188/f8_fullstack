@@ -54,7 +54,6 @@ hr {
   background-color: #d4af37;
 }
 
-.province button.active,
 .province button:hover {
   background-color: #d4af37;
   color: white;
