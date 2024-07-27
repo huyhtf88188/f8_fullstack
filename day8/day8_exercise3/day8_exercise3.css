@@ -52,6 +52,7 @@ hr {
 }
 .province button:first-child {
   background-color: #d4af37;
+  color: white;
 }
 
 .province button:hover {
