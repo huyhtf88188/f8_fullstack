@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.container {
+  width: 80%;
+  height: 60vh;
+  margin: 20px auto;
+}
+.head {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 2rem;
+}
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
+.clear {
+  flex: 1;
+}
+hr {
+  margin-top: 1rem;
+  opacity: 0.5;
+}
+
+.province {
+  display: flex;
+}
+
+.province button {
+  background-color: rgba(128, 128, 128, 0.186);
+  border: none;
+  padding: 10px 22px;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.province button.active,
+.province button:hover {
+  background-color: #d4af37;
+  color: white;
+}
+
+.province button span {
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic;
+  padding-top: 0.5rem;
+}
+.district {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+}
+.card-top,
+.card-bottom {
+  display: flex;
+  gap: 2rem;
+  margin: auto;
+}
+.card {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  position: relative;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.card h2 {
+  color: white;
+  font-size: 2rem;
+  margin: 15px 0;
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+}
+
+.card p {
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 15px;
+  position: absolute;
+  left: 2rem;
+  top: 22rem;
+}
+.card p span {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}

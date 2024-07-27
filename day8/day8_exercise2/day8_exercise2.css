@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "ASAP";
+  background-color: gray;
+}
+
+header {
+  width: 80%;
+  height: 300px;
+  margin: 10rem auto;
+  background-image: url("../../image/2.PNG");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  outline: 0.5px solid white;
+  border-radius: 8px;
+}
+.content-header {
+  color: white;
+  position: absolute;
+  left: 30rem;
+  top: 16rem;
+}
+.logo {
+  width: 100px;
+  height: 30px;
+  margin-right: 20px;
+  position: absolute;
+  left: -25rem;
+  top: -1.3rem;
+}
+
+img {
+  width: 22rem;
+  height: 12rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.introduce {
+  display: flex;
+  gap: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: rgba(255, 255, 255, 0.952);
+}
+
+span {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.menu-bar {
+  background-color: white;
+  border-top: 1px solid white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.menu-bar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.menu-bar ul li {
+  margin: 0 15px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+
+.menu-bar ul li a:hover {
+  color: #e74c3c;
+  border-bottom: 2px solid #e74c3c;
+}
