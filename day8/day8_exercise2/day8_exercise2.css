@@ -27,7 +27,7 @@ header {
   color: white;
   position: absolute;
   left: 35rem;
-  top: 22rem;
+  top: 20rem;
 }
 .logo {
   width: 100px;
@@ -35,12 +35,11 @@ header {
   margin-right: 20px;
   position: absolute;
   left: -25rem;
-  top: -2.8rem;
+  top: -5rem;
 }
 
 img {
   width: 22rem;
-  height: 12rem;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }

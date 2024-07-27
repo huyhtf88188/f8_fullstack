@@ -50,6 +50,9 @@ hr {
   font-size: 1.3rem;
   font-weight: bold;
 }
+.province button:first-child {
+  background-color: #d4af37;
+}
 
 .province button.active,
 .province button:hover {
