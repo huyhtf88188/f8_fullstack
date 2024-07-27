@@ -50,12 +50,13 @@ hr {
   font-size: 1.3rem;
   font-weight: bold;
 }
-.province button:first-child {
+
+.province button:hover {
   background-color: #d4af37;
   color: white;
 }
 
-.province button:hover {
+.province button:first-child {
   background-color: #d4af37;
   color: white;
 }
