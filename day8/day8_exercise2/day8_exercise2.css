@@ -48,7 +48,7 @@ h1 {
   font-size: 2rem;
   margin-bottom: 10px;
   font-family: "ASAP";
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .introduce {
@@ -88,10 +88,6 @@ span {
   display: flex;
   justify-content: center;
   font-weight: bold;
-}
-
-.menu-bar ul li {
-  margin: 0 15px;
 }
 
 .menu-bar ul li a {
