@@ -12,7 +12,6 @@
   width: 90%;
   padding: 20px;
   font-family: "inter";
-  font-size: 0.7rem;
 }
 
 .timeline-item {
@@ -145,6 +144,7 @@ button a {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
 .img-item p {
   font-size: 1rem;
   position: absolute;
