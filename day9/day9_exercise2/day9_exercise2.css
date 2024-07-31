@@ -156,3 +156,7 @@ a i:hover {
   background-color: white;
   color: black;
 }
+a:hover i {
+  background-color: white;
+  color: black;
+}

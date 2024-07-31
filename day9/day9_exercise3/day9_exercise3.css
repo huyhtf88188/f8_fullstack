@@ -62,13 +62,14 @@ textarea {
   border-radius: 5px;
   font-size: 1.2rem;
   padding: 1rem;
+  resize: none;
 }
 
 button {
   padding: 8px;
   border: 0.5px solid transparent;
   border-radius: 999px;
-  padding: 10px 25px 15px 25px;
+  padding: 10px 25px 10px 25px;
   background-color: #4d77d8;
   color: white;
   font-weight: 600;
@@ -101,4 +102,16 @@ label {
 option {
   border-radius: 5px;
   border: 1px solid #999;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: 1px solid #999;
+}
+
+select:focus,
+select:active {
+  outline: none;
 }
