@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: rgba(30, 143, 255, 0.736);
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.container-menu {
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  background-color: white;
+  border-bottom-right-radius: 90%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.menu-icon {
+  display: block;
+  height: 8px;
+  width: 30px;
+  margin: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-icon span {
+  display: block;
+  position: relative;
+  height: 5px;
+  width: 30px;
+  background-color: #00a4f0;
+  margin-bottom: 4px;
+}
+.second-row {
+  position: relative;
+}
+
+#checkbox:checked ~ .container-menu .menu-icon label .firt-row {
+  transform: rotate(141deg);
+  transition: transform 0.4s;
+  width: 50%;
+  height: 50%;
+  top: 2.5px;
+  left: -0.5px;
+}
+
+#checkbox:checked ~ .container-menu .menu-icon label .second-row {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+#checkbox:checked ~ .container-menu .menu-icon label .third-row {
+  transform: rotate(-141deg);
+  transition: transform 0.3s;
+  width: 50%;
+  height: 50%;
+  bottom: 2.5px;
+  left: -0.5px;
+}
+nav {
+  width: 15%;
+}
+.menu-bar {
+  display: none;
+}
+.menu-bar ul {
+  padding-top: 20px;
+}
+.menu-bar ul li {
+  display: block;
+  padding: 8px 0;
+}
+.menu-bar ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #00a4f0;
+  font-weight: 600;
+  display: block;
+  padding: 5px;
+  padding-left: 50px;
+}
+.menu-bar ul li a:focus {
+  background-color: #efefef;
+  color: #1a3066;
+}
+
+.content {
+  padding: 2rem;
+  width: 600px;
+  position: absolute;
+  top: 15rem;
+  left: 50rem;
+  text-align: right;
+  color: white;
+}
+.content p {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+}
+
+.content span {
+  position: absolute;
+  left: 14.3rem;
+  top: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+}
+.content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#checkbox:checked ~ .container-menu {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  border-radius: 0;
+}
+#checkbox:checked ~ .container-menu .menu-bar {
+  display: block;
+}

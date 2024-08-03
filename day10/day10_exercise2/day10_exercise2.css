@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+}
+
+.container {
+  max-width: 850px;
+  margin: 15px auto;
+  overflow: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+}
+
+.header ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+
+.header ul li {
+  flex: 1;
+  border: 1px solid #999;
+  border-right: none;
+  padding: 3px;
+}
+
+.header ul li:last-child {
+  border-right: 1px solid #999;
+}
+
+.header ul li label {
+  display: block;
+  padding: 12px;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header ul li label:hover {
+  background-color: #3398e0;
+  color: white;
+}
+
+input[id="firt-label"]:checked ~ .header label[for="firt-label"],
+input[id="second-label"]:checked ~ .header label[for="second-label"],
+input[id="third-label"]:checked ~ .header label[for="third-label"],
+input[id="fourth-label"]:checked ~ .header label[for="fourth-label"] {
+  background-color: #3398e0;
+  color: white;
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  width: 100%;
+  border-top: none;
+}
+
+.box-content {
+  display: none;
+  transition: all 0.8s ease;
+  transform-origin: top;
+  transform: rotateX(-45deg);
+}
+
+input[id="firt-label"]:checked ~ .content #simples,
+input[id="second-label"]:checked ~ .content #algoritmo,
+input[id="third-label"]:checked ~ .content #barra,
+input[id="fourth-label"]:checked ~ .content #captcha {
+  display: block;
+  position: inherit;
+  opacity: 1;
+  transform: perspective(800px) rotateX(0deg);
+}
+
+input[id="firt-label"]:not(:checked) ~ .content #simples,
+input[id="second-label"]:not(:checked) ~ .content #algoritmo,
+input[id="third-label"]:not(:checked) ~ .content #barra,
+input[id="fourth-label"]:not(:checked) ~ .content #captcha {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  transform: perspective(400px) rotateX(-90deg);
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+
+.wrap-content {
+  background: white;
+  padding: 15px;
+}
+
+h2 {
+  padding-left: 15px;
+  font-size: 2rem;
+  color: #656565;
+}
+
+p {
+  padding: 15px 15px 30px 15px;
+  margin-top: -23px;
+  margin-bottom: 50px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #656565;
+}
+.scroll {
+  position: relative;
+  top: 13px;
+  overflow-x: scroll;
+  width: 840px;
+  left: -10px;
+}
