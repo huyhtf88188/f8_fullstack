@@ -39,6 +39,8 @@
   width: 30px;
   background-color: #00a4f0;
   margin-bottom: 4px;
+  transition: transform 0.3s, width 0.3s, height 0.3s, top 0.3s, left 0.3s,
+    bottom 0.3s;
 }
 .second-row {
   position: relative;
