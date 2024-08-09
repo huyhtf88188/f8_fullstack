@@ -43,23 +43,16 @@
 }
 
 body {
+  overflow: hidden;
+}
+
+.wrap-vikinger {
   background-image: url("../image/landing-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
   height: 100vh;
 }
-.container {
-  /* background-image: url("../image/landing-background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  height: 100vh;
-  position: fixed; */
-}
-
 .viking-introduce {
   width: 584px;
   position: absolute;
