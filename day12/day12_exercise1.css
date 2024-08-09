@@ -1,0 +1,521 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+.titillium-web-extralight {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.titillium-web-light {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.titillium-web-bold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.titillium-web-black {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../image/landing-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+}
+.container {
+  /* background-image: url("../image/landing-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed; */
+}
+
+.viking-introduce {
+  width: 584px;
+  position: absolute;
+  top: 16%;
+  left: 13%;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  width: 50px;
+}
+
+.viking-introduce h2 {
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 36px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.viking-introduce h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 6.5rem;
+  font-weight: 900;
+  position: relative;
+  top: -40px;
+  text-align: center;
+}
+
+.viking-introduce p {
+  width: 384px;
+  margin: 30px auto 0;
+  font-size: 1.125rem;
+  line-height: 1.3333333333em;
+  font-weight: 500;
+  text-align: center;
+}
+.tab-switch {
+  margin-top: 90px;
+}
+
+.tab-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 90px auto;
+}
+.tab-switch-button {
+  width: 180px;
+  height: 54px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.tab-switch .login {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.tab-switch .register {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+input[id="login"]:checked ~ label[for="login"] {
+  color: #3e3f5e;
+  background-color: #fff;
+  cursor: auto;
+}
+
+input[id="register"]:checked ~ label[for="register"] {
+  color: #3e3f5e;
+  background-color: #fff;
+  cursor: auto;
+}
+
+.vikinger-form-login {
+  width: 484px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 13%;
+}
+.wrap-form {
+  position: relative;
+}
+
+.wrap-form-login {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+  position: absolute;
+  left: 0px;
+  transition: 0.6s ease-in-out;
+}
+
+.form-box-login {
+  position: absolute;
+  width: 484px;
+  padding: 64px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 0 60px 0 rgba(94, 92, 154, 0.12);
+}
+
+.form-box-login img {
+  position: absolute;
+  top: -14px;
+  left: -80px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.form-box-login h2 {
+  font-size: 1.625rem;
+  text-align: center;
+  color: #3e3f5e;
+  font-family: "Rajdhani", sans-serif;
+  line-height: 1em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.form-login {
+  margin-top: 76px;
+  width: 100%;
+}
+
+.password,
+.id-user {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Rajdhani", sans-serif;
+  position: relative;
+}
+.password input,
+.id-user input {
+  background-color: #fff;
+  border: 1px solid #dedeea;
+  height: 54px;
+  padding: 0 18px;
+  color: #3e3f5e;
+  transition: border-color 0.2s ease-in-out;
+  width: 100%;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.password label,
+.id-user label {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  display: block;
+  margin: 0;
+  color: #adafca;
+  line-height: 1em;
+}
+
+.password {
+  margin-top: 28px;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.login-options a {
+  color: #adafca;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.form-btn-login {
+  margin-top: 28px;
+}
+
+.form-btn-login button {
+  font-family: "Rajdhani", sans-serif;
+  width: 100%;
+  background-color: #615dfa;
+  box-shadow: 4px 7px 12px 0 rgba(97, 93, 250, 0.2);
+  height: 48px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  border: none;
+}
+
+.login-text {
+  margin-top: 40px;
+  text-align: center;
+  color: #3e3f5e;
+  font-family: "Rajdhani", sans-serif;
+}
+.form-box p {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+
+.form-social {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-social a {
+  text-decoration: none;
+}
+
+.facebook,
+.twitter,
+.twitch,
+.youtube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.facebook i,
+.twitter i,
+.twitch i,
+.youtube i {
+  color: white;
+  width: 12px;
+  height: 12px;
+}
+.facebook {
+  background-color: #3763d2;
+}
+.twitter {
+  background-color: #1abcff;
+}
+.twitch {
+  background-color: #7b5dfa;
+}
+.youtube {
+  background-color: #fd434f;
+}
+
+.wrap-form-register {
+  transform: translate(200px, 0px);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  left: 0px;
+  transition: 0.6s ease-in-out;
+}
+.form-box-register {
+  width: 484px;
+  padding: 64px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 0 60px 0 rgba(94, 92, 154, 0.12);
+}
+
+.form-box-register img {
+  position: absolute;
+  top: -14px;
+  left: -80px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.form-box-register h2 {
+  font-size: 1.625rem;
+  text-align: center;
+  font-weight: 700;
+  color: #3e3f5e;
+  font-family: "Rajdhani", sans-serif;
+  line-height: 1em;
+}
+
+.form-register {
+  margin-top: 76px;
+}
+.register-email,
+.register-username,
+.register-password,
+.register-password-repeat {
+  position: relative;
+}
+.register-username,
+.register-password,
+.register-password-repeat {
+  margin-top: 28px;
+}
+.form-register .register-email label,
+.form-register .register-username label,
+.form-register .register-password label,
+.form-register .register-password-repeat label {
+  color: #adafca;
+  font-size: 1rem;
+  font-weight: 600;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  display: block;
+  margin: 0;
+  line-height: 1em;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.form-register .register-email input,
+.form-register .register-username input,
+.form-register .register-password input,
+.form-register .register-password-repeat input {
+  width: 100%;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+  height: 54px;
+  padding: 0 18px;
+  background-color: #fff;
+  border: 1px solid #dedeea;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.register-option {
+  position: relative;
+  margin-top: 28px;
+}
+
+.register-option input {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.register-option label {
+  padding-left: 34px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 22px;
+  cursor: pointer;
+  color: #3e3f5e;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.fomr-btn-register {
+  margin-top: 28px;
+}
+
+.fomr-btn-register button {
+  width: 100%;
+  color: #fff;
+  background-color: #23d2e2;
+  box-shadow: 4px 7px 12px 0 rgba(35, 210, 226, 0.2);
+  height: 54px;
+  line-height: 54px;
+  font-family: "Rajdhani", sans-serif;
+  cursor: pointer;
+  height: 54px;
+  line-height: 54px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: none;
+}
+
+.register-text {
+  margin-top: 28px;
+}
+
+.register-text p {
+  color: #3e3f5e;
+  font-family: Rajdhani, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.7142857143em;
+  font-weight: 500;
+}
+
+.register-text a {
+  color: #00c7d9;
+  font-weight: 600;
+  font-family: Rajdhani, sans-serif;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+.viking-decoration {
+  width: 64%;
+  height: 140%;
+  border-radius: 50%;
+  background: url(../image/dot-texture.png) repeat 0 0 #fff;
+  position: absolute;
+  top: -20%;
+  right: -32%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+#register:checked ~ .viking-introduce .tab-switch label[for="register"] {
+  color: #3e3f5e;
+  background-color: #fff;
+  cursor: auto;
+}
+
+#login:checked ~ .viking-introduce .tab-switch label[for="login"] {
+  color: #3e3f5e;
+  background-color: #fff;
+  cursor: auto;
+}
+
+#register:checked ~ .vikinger-form-login .wrap-form .wrap-form-login {
+  transform: translate(200px, 0);
+  visibility: hidden;
+  opacity: 0;
+}
+
+#register:checked ~ .vikinger-form-login .wrap-form .wrap-form-register {
+  transform: translate(0, 0);
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1499.98px) {
+  .viking-decoration {
+    display: none;
+  }
+}
