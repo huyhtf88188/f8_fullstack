@@ -67,11 +67,11 @@ body {
   justify-content: center;
 }
 .logo img {
-  width: 50px;
+  width: 60px;
 }
 
 .viking-introduce h2 {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Rajdhani", sans-serif;
   margin-top: 36px;
   font-size: 1.5rem;
   font-weight: 500;
@@ -86,7 +86,7 @@ body {
   text-align: center;
 }
 
-.viking-introduce p {
+.viking-introduce-text p {
   width: 384px;
   margin: 30px auto 0;
   font-size: 1.125rem;
@@ -126,18 +126,6 @@ body {
   border-bottom-right-radius: 12px;
 }
 
-input[id="login"]:checked ~ label[for="login"] {
-  color: #3e3f5e;
-  background-color: #fff;
-  cursor: auto;
-}
-
-input[id="register"]:checked ~ label[for="register"] {
-  color: #3e3f5e;
-  background-color: #fff;
-  cursor: auto;
-}
-
 .vikinger-form-login {
   width: 484px;
   height: 100%;
@@ -147,6 +135,7 @@ input[id="register"]:checked ~ label[for="register"] {
 }
 .wrap-form {
   position: relative;
+  top: 50%;
 }
 
 .wrap-form-login {
@@ -157,6 +146,7 @@ input[id="register"]:checked ~ label[for="register"] {
   position: absolute;
   left: 0px;
   transition: 0.6s ease-in-out;
+  top: -320px;
 }
 
 .form-box-login {
@@ -237,6 +227,19 @@ input[id="register"]:checked ~ label[for="register"] {
   justify-content: space-between;
   align-items: center;
   margin-top: 28px;
+  font-family: "Rajdhani", sans-serif;
+}
+.login-options input {
+  cursor: pointer;
+}
+
+.login-options label {
+  padding-left: 10px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 22px;
+  cursor: pointer;
+  color: #3e3f5e;
 }
 
 .login-options a {
@@ -245,6 +248,10 @@ input[id="register"]:checked ~ label[for="register"] {
   font-weight: 700;
   line-height: 22px;
   text-decoration: none;
+}
+
+.login-options a:hover {
+  color: #23d2e2;
 }
 
 .form-btn-login {
@@ -266,14 +273,16 @@ input[id="register"]:checked ~ label[for="register"] {
   cursor: pointer;
   border: none;
 }
+.form-btn-login button:hover {
+  background-color: #3763d2;
+  transition: background-color 0.5s ease;
+}
 
 .login-text {
   margin-top: 40px;
   text-align: center;
   color: #3e3f5e;
   font-family: "Rajdhani", sans-serif;
-}
-.form-box p {
   font-size: 0.875rem;
   font-weight: 700;
   text-align: center;
@@ -288,6 +297,7 @@ input[id="register"]:checked ~ label[for="register"] {
 }
 .form-social a {
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .facebook,
@@ -331,6 +341,7 @@ input[id="register"]:checked ~ label[for="register"] {
   position: absolute;
   left: 0px;
   transition: 0.6s ease-in-out;
+  top: -370px;
 }
 .form-box-register {
   width: 484px;
@@ -418,7 +429,7 @@ input[id="register"]:checked ~ label[for="register"] {
 }
 
 .register-option label {
-  padding-left: 34px;
+  padding-left: 8px;
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 22px;
@@ -449,6 +460,10 @@ input[id="register"]:checked ~ label[for="register"] {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
     border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   border: none;
+}
+
+.fomr-btn-register button:hover {
+  background-color: #1abcff;
 }
 
 .register-text {
@@ -511,4 +526,131 @@ input[id="register"]:checked ~ label[for="register"] {
   .viking-decoration {
     display: none;
   }
+  .viking-introduce {
+    left: 20px;
+  }
+  .viking-introduce p {
+    margin-top: -40px;
+  }
+  .tab-switch {
+    margin-top: 40px;
+  }
+  .vikinger-form-login {
+    right: 10%;
+  }
+}
+@media screen and (max-width: 1364.98px) {
+  .viking-introduce-text {
+    display: none;
+  }
+  .viking-introduce {
+    top: 50px;
+    left: 30%;
+  }
+  .wrap-form {
+    top: 0;
+  }
+  .vikinger-form-login {
+    left: 33.5%;
+    top: 65%;
+  }
+  .tab-switch {
+    margin-top: -10px;
+  }
+  #register:checked ~ .vikinger-form-login .wrap-form .wrap-form-login {
+    transform: translate(0, 0);
+    visibility: hidden;
+    opacity: 0;
+  }
+  .wrap-form-register {
+    transform: translate(0, 0);
+    transition: translate 0s ease;
+    transform-origin: 0;
+    top: -320px;
+  }
+  .form-box-login img,
+  .form-box-register img {
+    display: none;
+  }
+  .wrap-form-login {
+    transform: translate(0, 0);
+    transition: translate 0s ease;
+  }
+}
+
+.login-options input,
+.register-option input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.login-options span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(128, 128, 128, 0.184);
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  background-color: #23d2e2;
+  z-index: 1;
+  left: -8px;
+  top: 4px;
+}
+.register-option span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(128, 128, 128, 0.184);
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  background-color: #23d2e2;
+  z-index: 1;
+  left: 0;
+  top: 4px;
+}
+
+.login-options span::before,
+.register-option span::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 4.5px;
+  background-color: white;
+  top: 7px;
+  left: 2.5px;
+  transform-origin: center;
+  transform: rotate(45deg);
+  display: block;
+}
+
+.login-options span::after,
+.register-option span::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 4.5px;
+  background-color: white;
+  top: 7px;
+  left: 2.5px;
+  display: block;
+  transform: rotate(-45deg);
+}
+
+.login-options input:checked + span,
+.register-option input:checked + span {
+  background-color: #fff;
+}
+
+.login-options input:checked + span::after,
+.login-options input:checked + span::before,
+.register-option input:checked + span::after,
+.register-option input:checked + span::before {
+  display: none;
+}
+
+.form-social a:hover {
+  transform: translateY(-10%);
 }
